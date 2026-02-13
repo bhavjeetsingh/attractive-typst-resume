@@ -13,76 +13,78 @@
 
 #show: project.with(
   theme: rgb("#0F83C0"),
-  name: "Harnoor Singh",
+  name: "Bhavjeet Singh",
   contact: (
     contact(
-      text: "LinkedIn://iharnoor",
-      link: "https://www.linkedin.com/in/iharnoor"
+      text: "LinkedIn://bhavjeetsingh",
+      link: "https://www.linkedin.com/in/bhavjeetsingh"
     ),
     contact(
-      text: "Github://iharnoor",
-      link: "https://www.github.com/iharnoor"
+      text: "Github://bhavjeetsingh",
+      link: "https://www.github.com/bhavjeetsingh"
     ),
     contact(
-      text: "singhinusa.dev",
-      link: "https://singhinusa.dev"
+      text: "7678205626",
+      link: "tel:7678205626"
     ),
     contact(
-      text: "email@example.com",
-      link: "mailto:email@example.com"
+      text: "bhavjeetsingh784@gmail.com",
+      link: "mailto:bhavjeetsingh784@gmail.com"
     )
   ),
   main: (
     section(
-      title: "Experience",
+      title: "Projects",
       content: (
         subSection(
-          title: "Microsoft Corp.",
-          titleEnd: "Atlanta, GA",
-          subTitle: "Software Engineer",
-          subTitleEnd: "(July 2022 – April 2025)",
-          content: [
-            *AI / Applied ML (Microsoft Security)*
-            #list(
-              [Architected and implemented *AI-driven query translation (NL2KQL)* using *Vector Databases and Retrieval-Augmented Generation (RAG)* pipelines, enabling natural-language security analytics over structured telemetry.],
-              [Owned the *end-to-end design, implementation, and validation* of AI-enhanced workflows, partnering with security engineers and PMs to ensure *correctness, scalability, and production readiness*.],
-              [Led experimentation and *prompt optimization strategies* to improve query accuracy and system reliability in production security environments.],
-              [*Technologies:* LLM-based APIs, RAG Pipelines, Vector Databases, NL2KQL, Security Analytics]
-            )
-            *Mobile Engineering / Platform (Microsoft Defender)*
-            #list(
-              [Led the design and development of *end-to-end native test frameworks* for Microsoft Defender *Android and iOS*, *doubling release velocity (2× faster)* while improving regression coverage and reliability.],
-              [Built and maintained *native mobile testing infrastructure*, enabling faster iteration cycles and reducing production regressions across multiple Defender releases.],
-              [Collaborated with cross-platform mobile teams to integrate testing pipelines into CI/CD workflows.],
-              [*Technologies:* Android, iOS, Native Testing Frameworks, Automated Testing, CI/CD]
-            )
-            *Cross-Functional / Developer Advocacy*
-            #list(
-              [Partnered with the *Microsoft Designer* team as a creative collaborator, contributing to *go-to-market strategy* and producing technical marketing content, for my YouTube channel Singh in USA (*1M+ subscribers*).]
-            )
-          ],
-        ),
-        subSection(
-          title: "NCR (National Cash Register)",
-          titleEnd: "Atlanta, GA",
-          subTitle: "Software Engineer",
-          subTitleEnd: "(July 2020 – July 2022)",
+          title: "AI Document Portal Analyzer",
+          titleEnd: "",
+          subTitle: "Python, Flask, LangChain, AWS, Docker, FAISS, Streamlit, FastAPI",
+          subTitleEnd: "",
           content: list(
-            [Contributed to NCR Silver POS Android application, working within a *1M+ LOC* codebase spanning *19 modules* and serving hundreds of thousands of global users.],
-            [Served as *Atlanta team lead and Scrum Master*, coordinating execution for *11 engineers and QA members*, driving sprint planning, delivery, and cross-team alignment.],
-            [Engineered production features using *Dagger2, RxJava, Kotlin Multiplatform, and C++*, including cross-platform shared libraries for business-critical workflows.],
-            [Designed and implemented instrumentation and unit testing frameworks using *Espresso, Mockito, and JUnit*, improving stability and reducing post-release defects.],
-            [Acted as a technical interviewer and campus recruiter, representing NCR at university engineering fairs and contributing to intern hiring pipelines.],
-            [*Technologies:* Android, Kotlin, RxJava, Dagger2, C++, Espresso, Mockito, JUnit]
+            [Built GenAI portal for document chat, comparison, and QnA using *advanced RAG with session memory*.],
+            [Implemented *side-by-side document similarity/diff features* and multi-doc vector retrieval.],
+            [Integrated *PyMuPDF, PDFMiner, Unstructured, and Python-Docx* for text extraction.],
+            [Optimized model serving with *local LLMs (vLLM, Groq, quantized)*; added cache augmented generation for speed.],
+            [Developed UI in Streamlit/Gradio with FastAPI backend; deployed on *AWS ECS/Fargate* via Docker, GitHub Actions, SonarQube, and AWS Secrets Manager.],
           ),
         ),
         subSection(
-          title: "Panasonic Automotive",
-          titleEnd: "Peachtree City, GA",
-          subTitle: "Systems Engineering Intern",
-          subTitleEnd: "(May 2017 – May 2018)",
+          title: "LLM Research Generation System",
+          titleEnd: "",
+          subTitle: "LangGraph, Python, LangChain, CrewAI",
+          subTitleEnd: "",
           content: list(
-            [Built an Android-based infotainment simulation app replicating Panasonic's in-car entertainment system, reducing developer onboarding and use-case understanding time by ~2×.]
+            [Built *multi-agent system for research automation* using LangGraph & CrewAI.],
+            [Designed agent roles (search, analyst, generator) with *async orchestration*.],
+            [Integrated *RAG stack, Arxiv & web APIs* for external knowledge.],
+            [Created *FastAPI backend & interactive UI* for task control and monitoring.],
+            [Deployed with Docker & GitHub Actions to *AWS EC2* (CI/CD & logging setup).],
+          ),
+        ),
+        subSection(
+          title: "GenCart: Real-Time E-Commerce Product Assistant",
+          titleEnd: "",
+          subTitle: "Python, LangChain, MCP, FastAPI",
+          subTitleEnd: "",
+          content: list(
+            [Built real-time product assistant integrating static & live data via *APIs/web scraping (Flipkart, Amazon)*.],
+            [Developed *RAG pipeline with LangChain agents and MCP layer* for multi-step product reasoning.],
+            [Embedded product data and indexed with *DataStax Astra DB* for fast retrieval.],
+            [Created chat-based UI and FastAPI backend for responsive user interaction.],
+            [Deployed securely on *AWS EKS* with Docker & GitHub Actions (CI/CD & vulnerability scanning via Trivy).],
+          ),
+        ),
+        subSection(
+          title: "HealthWise ChatBot (Medical GenAI)",
+          titleEnd: "Hackathon",
+          subTitle: "Python, LangChain, MCP, FastAPI, GPT, Pinecone, Flask",
+          subTitleEnd: "",
+          content: list(
+            [Developed an *AI-powered medical chatbot* using LangChain, GPT, Pinecone & Flask.],
+            [Enabled *secure vector database search* for health info and research papers.],
+            [Designed frontend UI, deployed backend on *AWS EC2* via Docker & GitHub Actions (CI/CD).],
+            [Integrated environment setup, API key security, and embedding workflow for robust deployment.],
           ),
         ),
       ),
@@ -91,18 +93,71 @@
       title: "Education",
       content: (
         subSection(
-          title: "Georgia State University",
-          titleEnd: "Atlanta, GA",
-          subTitle: "BS & MS in Computer Science",
-          subTitleEnd: "(2016 – 2020)",
-          content: [
-            *summa cum laude* | GPA: 4.0\
-            President's List, Honors College
-          ],
+          title: "Indian Institute of Technology, Madras",
+          titleEnd: "",
+          subTitle: "Bachelor of Science in Data Science and Programming",
+          subTitleEnd: "Expected 2025",
+          content: [],
         ),
       ),
-    )
+    ),
+    section(
+      title: "Certifications",
+      content: (
+        subSection(
+          title: "Complete Guide to Building & Deploying Generative AI",
+          titleEnd: "",
+          subTitle: "LangChain and Hugging Face - Krish Naik",
+          subTitleEnd: "",
+          content: [],
+        ),
+        subSection(
+          title: "Advanced RAG & Agentic AI with LangChain",
+          titleEnd: "",
+          subTitle: "Krish Naik",
+          subTitleEnd: "",
+          content: [],
+        ),
+      ),
+    ),
   ),
-  sidebar: (),
+  sidebar: (
+    section(
+      title: "Technical Skills",
+      content: (
+        skillSection(
+          title: "LLMOps & Generative AI",
+          content: [Python, LangChain, Hugging Face, OpenAI, RAG Pipelines]
+        ),
+        skillSection(
+          title: "Vector Databases",
+          content: [FAISS, Qdrant, Pinecone, ChromaDB]
+        ),
+        skillSection(
+          title: "Multi-Agent Systems",
+          content: [LangGraph, CrewAI, Multi-Agent Systems]
+        ),
+        skillSection(
+          title: "Data Science",
+          content: [pandas, NumPy, Matplotlib]
+        ),
+        skillSection(
+          title: "Machine Learning",
+          content: [TensorFlow, PyTorch, Scikit-Learn, CLIP, BLIP]
+        ),
+        skillSection(
+          title: "MLOps & Cloud",
+          content: [AWS (EC2, ECS, EKS, Fargate), Docker, Kubernetes]
+        ),
+        skillSection(
+          title: "API Development",
+          content: [FastAPI, Flask, Streamlit]
+        ),
+        skillSection(
+          title: "Data Engineering",
+          content: [Apache Airflow, MLflow, DVC, GitHub Actions]
+        ),
+      ),
+    ),
+  ),
 )
-
